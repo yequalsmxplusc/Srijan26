@@ -30,7 +30,7 @@ function Dashboard({ user }: { user: User }) {
   const pendingItems = user.merchandise?.filter((item: any) => item.status === "pending") ?? [];
   const lastPendingItem = pendingItems.at(-1);
 
-  const displayItems = [...completedItems, ...(lastPendingItem ? [lastPendingItem] : [])];
+  const displayItems = completedItems.length > 0 ? completedItems : (lastPendingItem ? [lastPendingItem] : []);
 
   return (
     <div className="relative isolate flex flex-col items-center justify-center gap-10 p-6 md:p-12 min-h-[80vh] h-fit text-white">
