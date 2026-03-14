@@ -37,7 +37,7 @@ export default function EventScoring({ scoring, color, className }: Props) {
           Event Scoring
         </h2>
         
-        <div className="text-white pt-2 space-y-3">
+        <div className="text-white space-y-3">
           {scoring.map((item, index) => {
             // CONDITIONAL CHECK: If the string starts with "# ", it's an intro text/heading.
             const isHeading = item.startsWith("# ");
@@ -47,7 +47,7 @@ export default function EventScoring({ scoring, color, className }: Props) {
 
             if (isHeading) {
               return (
-                <p key={index} className="leading-relaxed text-lg mb-4">
+                <p key={index} className="leading-relaxed text-xl pb-1 mt-8">
                   {renderWithBold(textToRender)}
                 </p>
               );

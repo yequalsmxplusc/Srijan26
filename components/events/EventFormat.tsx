@@ -34,14 +34,14 @@ export default function EventFormat({ format, color, className }: Props) {
           Event Format
         </h2>
 
-        <div className="text-white pt-2 space-y-3">
+        <div className="text-white space-y-3">
           {format.map((item, index) => {
             const isHeading = item.startsWith("# ");
             const textToRender = isHeading ? item.slice(2) : item;
 
             if (isHeading) {
               return (
-                <p key={index} className="leading-relaxed text-lg mb-4">
+                <p key={index} className="leading-relaxed text-xl pb-1 mt-8">
                   {renderWithBold(textToRender)}
                 </p>
               );

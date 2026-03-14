@@ -34,14 +34,14 @@ export default function EventPrizeDetails({ prizeDetails, color, className }: Pr
           Prize Details
         </h2>
         
-        <div className="text-white pt-2 space-y-3">
+        <div className="text-white space-y-3">
           {prizeDetails.map((detail, index) => {
             const isHeading = detail.startsWith("# ");
             const textToRender = isHeading ? detail.slice(2) : detail;
 
             if (isHeading) {
               return (
-                <p key={index} className="leading-relaxed text-lg mb-4">
+                <p key={index} className="leading-relaxed text-xl pb-1 mt-8">
                   {renderWithBold(textToRender)}
                 </p>
               );
