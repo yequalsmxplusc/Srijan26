@@ -832,30 +832,69 @@ const ROBOTICS_EVENTS: Event[] = [
     category: "Circuits and Robotics",
     color: "#1DDBFF",
     description:
-      "The pinnacle of robotic competition where engineering brilliance meets tactical mastery in the exhilarating Robo Sumo arena! Navigate through wired and wireless categories in electrifying elimination rounds.",
+      "The **ultimate Robo Sumo competition** where engineering skill meets tactical combat. Teams design powerful robots and battle inside the arena across **wired and wireless categories**, competing in intense elimination matches where strategy, control, and mechanical precision determine victory.",
+    image: "/images/posters/lord-of-the-ring.webp",
+    tags: ["Robo Sumo", "Combat", "Mechatronics"],
     format: "Offline",
     teamSize: "3-5",
     rules: [
-      "Team Size: 3 - 5 members per team.",
-      "Categories: Wired and Wireless (Distinct rewards for each).",
-      "Format: Elimination rounds. Losing means leaving.",
-      "Match Duration: 3 rounds, 1 minute each.",
-      "Victory: The first robot to win 2 rounds wins the match. Winners are determined based on strategic moves.",
-      "Judges: Decisions regarding task completion, movement precision, and strategic execution rest with club judges.",
+      "Team size must be **3–5 members per team**",
+      "Competition includes **Wired and Wireless robot categories**",
+      "Robots must fit within **30 cm × 30 cm × 15 cm dimensions**",
+      "Maximum robot weight: **2.5 kg**",
+      "Minimum ground clearance: **7 mm**",
+      "Maximum wheel diameter: **6 cm**",
+      "Allowed drive systems include **high-torque PM brushed DC motors with standard gearboxes**",
+      "**BLDC motors, stepper motors, and industrial servos are prohibited**",
+      "**Planetary gearboxes and cycloidal drives are not allowed**",
+      "**Mecanum wheels, omni wheels, sticky tires, and suction systems are banned**",
+      "Robots must implement the **20A Automotive Blade Fuse safety rule**",
+      "Entering the arena intentionally before the match may result in **penalty points**",
+      "For wired bots, **220V power supply will be provided**",
+      "The **decision of judges is final in case of disputes**",
     ],
-    lastDate: "April 10, 2026",
+    scoring: [
+      "# Arena Scoring System",
+      "+2 Points: **Moving the opponent into the green danger zone**",
+      "+5 Points: **Complete displacement by pushing the opponent out of the arena**",
+      "# Tie Breaker",
+      "If both robots exit the arena, the robot that **leaves later receives the advantage based on sector position**",
+      "# Penalties",
+      "Entering the arena intentionally before the start results in **negative points**",
+    ],
+    eventFormat: [
+      "# Match Structure",
+      "Matches follow an **elimination format**",
+      "Each match consists of **3 rounds of 1 minute each**",
+      "The robot that **wins 2 rounds first wins the match**",
+      "# Categories",
+      "Competition includes **Wired and Wireless categories with separate rewards**",
+    ],
+    lastDate: "TBA",
     prizePool: "₹ 12,000",
+    winnerPrize: "₹3,000",
+    runnersUpPrize: "₹2,000",
+    secondRunnersUpPrize: "₹1,000",
+    andMore: true,
+    prizeDetails: [
+      "# **Wired Category**",
+      "1st Prize — ₹3000",
+      "2nd Prize — ₹2000",
+      "3rd Prize — ₹1000",
+      "# **Wireless Category**",
+      "1st Prize — ₹3000",
+      "2nd Prize — ₹2000",
+      "3rd Prize — ₹1000",
+    ],
     link: "/register/lotr",
     driveLink:
       "https://drive.google.com/file/d/1dLb_yYxSeimMhUlxXUcjTMDxmqVxTHC-/view?usp=sharing",
-    image: "/images/posters/lord-of-the-ring.webp",
-    tags: ["Robo Sumo", "Combat", "Mechatronics"],
-    status: "Open",
     coordinators: [
       { name: "Tuhin Roy", contact: "7980143323" },
       { name: "Soham Saha", contact: "8918140410" },
       { name: "Arnab Karmakar", contact: "9883415630" },
     ],
+    status: "Open",
   },
 ];
 
@@ -990,14 +1029,14 @@ const BUSINESS_EVENTS: Event[] = [
     ],
   },
 
-
- {
+  {
     id: "b6",
     slug: "pkv",
     title: "Pack-o-vation",
     category: "Business",
     color: "#FBEC1D",
-    description: "A team-based competition aimed at inspiring innovative and sustainable packaging solutions. Participants integrate design, branding, and user experience into practical packaging improvements while considering environmental and market impacts.",
+    description:
+      "A team-based competition aimed at inspiring innovative and sustainable packaging solutions. Participants integrate design, branding, and user experience into practical packaging improvements while considering environmental and market impacts.",
     format: "Offline",
     teamSize: "2-4",
     rules: [
@@ -1005,21 +1044,22 @@ const BUSINESS_EVENTS: Event[] = [
       "Round 2: Develop a complete packaging solution based on a real-world challenge, including structural concepts, material selection, and a sustainability strategy.",
       "Prototype: Teams must provide a physical model, mockup, or 3D visualization of their solution.",
       "Final Presentation: A 4-5 minute pitch followed by a 2-3 minute Q&A and a live 'constraint-based defense' to test adaptability.",
-      "Evaluation: Judged on structural feasibility, branding impact, cost efficiency, and market viability."
+      "Evaluation: Judged on structural feasibility, branding impact, cost efficiency, and market viability.",
     ],
     lastDate: "TBA",
     prizePool: "₹ 7,000",
     link: "/register/pkv",
-    driveLink: "https://drive.google.com/drive/folders/1cge9VZWypqascsE9O4D7F1WweLiz-Wzd",
+    driveLink:
+      "https://drive.google.com/drive/folders/1cge9VZWypqascsE9O4D7F1WweLiz-Wzd",
     image: "/images/posters/pack-o-vation.webp",
     tags: ["Packaging", "Innovation", "Sustainability"],
     status: "Open",
     coordinators: [
       { name: "Soham Ghosh", contact: "6294619087" },
       { name: "Anshika Dutta", contact: "8617317676" },
-      { name: "Pranjal Deb", contact: "6290622851" }
-    ]
-},
+      { name: "Pranjal Deb", contact: "6290622851" },
+    ],
+  },
 
   {
     id: "b7",
